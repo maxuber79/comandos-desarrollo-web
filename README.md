@@ -46,54 +46,69 @@ Nota:
 "--skip-tests" 0 "--skipTests /  Crear unmodulo sin el archivo spec.ts
 ```
 	
-## Abrir aplicación:
+### Abrir aplicación:
+```text 
 $ ng serve -o / ng serve --port 4401  
-
-## Crear servicios:
+```
+### Crear servicios:
+```text 
 $ ng g s services/infoPaginas
-
-## Aplicacion pruebas en producción:
+```
+### Aplicacion pruebas en producción:
+```text 
 $ ng build --prod
-
-## Instalar bootstrap + dependencias:skip
+```
+### Instalar bootstrap + dependencias:skip
+```text 
 $ npm i bootstrap --save
 $ npm i jquery --save
 $ npm i @popperjs/core
-
-## Reinstalar Node_modules de angular bajado desde repositorios
+```
+### Reinstalar Node_modules de angular bajado desde repositorios
+```text 
 $ npm install --save-dev @angular-devkit/build-angular
-
-# Eliminar carpte node_modules
+```
+### Eliminar carpeta node_modules
+```text 
 $ rm -rf node_modules && npm i	
-
+```
 ### TYPESCRIPT:
+```text 
 $ tsc --init /crear archivo de configuracion de typescript
 $ tsc -w / o --watch modo de observador
+```
 
-
-## Instalar Paquetes desde npm
+### Instalar Paquetes desde npm
+```text 
 $ ng i [nombre paquete] / ng install [nombre paquete]
-
+```
 Ej.
 npm install bootstrap
 npm i fontawesome-4.7
 
-### GIT:
+## GIT:
 
 ### Iniciar un proyecto git
+```text
 $ git init
-
+```
 ### Pasar el proyecto al stage
+```text
 $ git add .
+```
 
 ### Deshaser el stage
+```text
 	git reset .
-
+```
 ### Pasar el proyecto a un commit
+```text
 $ git commit -m "primer commit"
-
+```
 ### Comando para agregar al stage y el commit
+```text
 $ git commit -am "Lorem ipsun dolor"
+```
 
 ### Editar el nombre del commit
 $ git commit --amend

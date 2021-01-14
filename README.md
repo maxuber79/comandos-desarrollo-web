@@ -1,27 +1,27 @@
 # INSTALACIONES DE PROGRAMAS DE DESARROLLO
 
-## Git | url:https://git-scm.com/
-Aqui página de comandos: https://bluuweb.github.io/tutorial-github/
+### Git | url:https://git-scm.com/
+```text Aqui página de comandos: https://bluuweb.github.io/tutorial-github/```
 
-## Version de NodeJS | url:https://nodejs.org/es/
-$ node -v
+### Version de NodeJS | url:https://nodejs.org/es/
+```text $ node -v```
 
-## Version de NPM | url:https://www.npmjs.com/
-$ npm -v
+### Version de NPM | url:https://www.npmjs.com/
+```text $ npm -v```
 
 nota: npm esta por defecto si instalas node js
 
-## Instalar TypeScript | url: https://www.typescriptlang.org/es/
-$ npm install -g typescript
+### Instalar TypeScript | url: https://www.typescriptlang.org/es/
+```text $ npm install -g typescript```
 
-## Versión de TypeScript
-$ tsc --version
+### Versión de TypeScript
+$```text  tsc --version```
 
-## Version Angular CLI
-$ ng v / ng version
+### Version Angular CLI
+```text $ ng v / ng version```
 
 
-# INSTALACIONES PARA ANGULAR CLI
+## INSTALACIONES PARA ANGULAR CLI
 
 ## Instalar AngularCLI de forma global | url:https://angular.io/
 $ npm install -g @angular/cli
@@ -143,6 +143,7 @@ $ git remote rm destination
 $ git remote -v
 
 ### Verificar que se haya ido
+
 > origin  https://github.com/OWNER/REPOSITORY.git (fetch)
 > origin  https://github.com/OWNER/REPOSITORY.git (push)
 

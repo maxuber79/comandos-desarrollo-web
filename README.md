@@ -1,21 +1,21 @@
 # INSTALACIONES DE PROGRAMAS DE DESARROLLO
 
 ### Git | url:https://git-scm.com/
-```text Aqui página de comandos: https://bluuweb.github.io/tutorial-github/```
+``` text Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
 
 ### Version de NodeJS | url:https://nodejs.org/es/
-```text $ node -v```
+```text $ node -v ```
 
 ### Version de NPM | url:https://www.npmjs.com/
-```text $ npm -v```
+```text $ npm -v ```
 
 nota: npm esta por defecto si instalas node js
 
 ### Instalar TypeScript | url: https://www.typescriptlang.org/es/
-```text $ npm install -g typescript```
+```text $ npm install -g typescript ```
 
 ### Versión de TypeScript
-$```text  tsc --version```
+```text $ tsc --version```
 
 ### Version Angular CLI
 ```text $ ng v / ng version```
@@ -23,24 +23,28 @@ $```text  tsc --version```
 
 ## INSTALACIONES PARA ANGULAR CLI
 
-## Instalar AngularCLI de forma global | url:https://angular.io/
-$ npm install -g @angular/cli
+### Instalar AngularCLI de forma global | url:https://angular.io/
+```text $ npm install -g @angular/cli```
 
-## Actualizar Agular:
-$ ng update @angular/cli @angular/core
+### Actualizar Agular:
+```text $ ng update @angular/cli @angular/core```
 
-## Crear un nuevo proyecto de Angular CLI
-$ ng new my-first-project
+### Crear un nuevo proyecto de Angular CLI
+```text $ ng new my-first-project```
 
-## Crear un nuevo modulo en Angular
+### Crear un nuevo modulo en Angular
+```text 
 $ ng g c template_parts/header --skip-tests
 $ ng g s services/productos --skipTests 
 $ ng g c components/MyName -is --skipTests
+```
 
 Nota:
+```text 
 -is Eliminar archiv scss/css/sass
 --skipTests Eliminar los archivos de pruebas
 "--skip-tests" 0 "--skipTests /  Crear unmodulo sin el archivo spec.ts
+```
 	
 ## Abrir aplicación:
 $ ng serve -o / ng serve --port 4401  

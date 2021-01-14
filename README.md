@@ -97,9 +97,9 @@ $ git init
 $ git add .
 ```
 
-### Deshaser el stage
+### Deshacer el stage
 ```text
-	git reset .
+$ git reset .
 ```
 ### Pasar el proyecto a un commit
 ```text
@@ -111,73 +111,98 @@ $ git commit -am "Lorem ipsun dolor"
 ```
 
 ### Editar el nombre del commit
+```text
 $ git commit --amend
+```
 
 ### Reconstruir el proyecto desde ultimo commit
+```text
 $ git checkout --.
+```
 
 ### Actualizar git desde consola:
+```text
 $ git update-git-for-windows
+```
 
 ### Agregar un remoto:
+```text
 $ git remote add origin [URL repositorio]
+```
 
 ### Cambiar nombre del remote
+```text
 $ git remote rename origin [nuevo nombre]
+```
 
 ### Borrar remoto:
+```text
 $ git remote rm destination
+```
 
 ### crear una nueva rama
+```text
 $ git branch [nombre rama]
+```
 
 ### Crear una nueva rama y quedarse en ella
+```text
 $ git checkout -b [nombre rama]
-
+```
 ### Mostrar las ramas existente
+```text
 $ git branch o git status
-
+```
 ### Moverse a la rama creada
+```text
 $ git checkout [nomre rama]
-
+```
 ### Ver que diferencias hay entre las ramas
+```text
 $ git diff [nombre rama] master
-
+```
 ### Unir ramas
+```text
 $ git merge [nombre rama]
-
+```
 ### Borrar rama que ya se unieron
+```text
 $ git branch -d [nombre rama]
-
 $ git remote -v
+```
 ### Ver los remotos actuales
-> origin  https://github.com/OWNER/REPOSITORY.git (fetch)
-> origin  https://github.com/OWNER/REPOSITORY.git (push)
-> destination  https://github.com/FORKER/REPOSITORY.git (fetch)
-> destination  https://github.com/FORKER/REPOSITORY.git (push)
-
+```text
+$ origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+$ origin  https://github.com/OWNER/REPOSITORY.git (push)
+$ destination  https://github.com/FORKER/REPOSITORY.git (fetch)
+$ destination  https://github.com/FORKER/REPOSITORY.git (push)
 $ git remote rm destination
-
+```
 ### Eliminar remoto
+```text
 $ git remote -v
-
+```
 ### Verificar que se haya ido
-
-> origin  https://github.com/OWNER/REPOSITORY.git (fetch)
-> origin  https://github.com/OWNER/REPOSITORY.git (push)
-
+```text
+$ origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+$ origin  https://github.com/OWNER/REPOSITORY.git (push)
 $ git remote -v
-# Ver remotos existentes
-> origin  https://github.com/OWNER/REPOSITORY.git (fetch)
-> origin  https://github.com/OWNER/REPOSITORY.git (push)
-
+```
+### Ver remotos existentes
+```text
+$ origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+$ origin  https://github.com/OWNER/REPOSITORY.git (push)
 $ git remote rename origin destination
-# Cambiar el nombre del remoto de 'origen' a 'destino'
-
+```
+### Cambiar el nombre del remoto de 'origen' a 'destino'
+```text
 $ git remote -v
-# Verificar el nombre nuevo del remoto
-> destination  https://github.com/OWNER/REPOSITORY.git (fetch)
-> destination  https://github.com/OWNER/REPOSITORY.git (push)
+```
+### Verificar el nombre nuevo del remoto
+```text
+$ destination  https://github.com/OWNER/REPOSITORY.git (fetch)
+$ destination  https://github.com/OWNER/REPOSITORY.git (push)
+```
 
 ``` javascript Esc + w + q ```
 

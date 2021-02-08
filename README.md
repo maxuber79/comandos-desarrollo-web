@@ -48,11 +48,11 @@ $ ng g c components/MyName -is --skipTests
 ```
 
 Nota:
-```text 
--is Eliminar archiv scss/css/sass
---skipTests Eliminar los archivos de pruebas
-"--skip-tests" 0 "--skipTests /  Crear unmodulo sin el archivo spec.ts
-```
+
+- -is Eliminar archiv scss/css/sass
+- --skipTests Eliminar los archivos de pruebas
+- "--skip-tests" 0 "--skipTests /  Crear unmodulo sin el archivo spec.ts
+
 	
 ### Abrir aplicación:
 ```text 
@@ -91,8 +91,8 @@ $ tsc -w / o --watch modo de observador
 $ ng i [nombre paquete] / ng install [nombre paquete]
 ```
 Ej.
-npm install bootstrap
-npm i fontawesome-4.7
+- npm install bootstrap
+- npm i fontawesome-4.7
 
 ## GIT:
 

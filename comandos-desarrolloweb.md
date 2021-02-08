@@ -1,7 +1,15 @@
 # INSTALACIONES DE PROGRAMAS DE DESARROLLO
 
+
 ## Git | url:https://git-scm.com/
 Aqui página de comandos: https://bluuweb.github.io/tutorial-github/
+
+## Configuración inicial Git
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+## Versión Git
+$git --version
 
 ## Version de NodeJS | url:https://nodejs.org/es/
 $ node -v

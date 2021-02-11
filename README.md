@@ -96,6 +96,10 @@ Ej.
 
 ## GIT:
 
+### Actualizar git por comandos
+```text
+$ git update-git-for-windows
+```
 ### Iniciar un proyecto git
 ```text
 $ git init

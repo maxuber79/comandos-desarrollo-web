@@ -84,6 +84,9 @@ npm i fontawesome-4.7
 
 ### GIT:
 
+### Actualizar git por comandos
+$ git update-git-for-windows
+
 ### Iniciar un proyecto git
 $ git init
 

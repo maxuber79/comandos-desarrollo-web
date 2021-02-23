@@ -68,9 +68,15 @@ $ ng build --prod
 ```
 ### Instalar bootstrap + dependencias:skip
 ```text 
-$ npm i bootstrap --save
-$ npm i jquery --save
-$ npm i @popperjs/core
+
+$ ng i [nombre paquete] / ng install [nombre paquete]
+$ ng i jquery bootstrap popper --save
+
+Ej.
+npm install bootstrap
+npm i fontawesome-4.7
+npm i popper
+npm i @popperjs/core
 ```
 ### Reinstalar Node_modules de angular bajado desde repositorios
 ```text 

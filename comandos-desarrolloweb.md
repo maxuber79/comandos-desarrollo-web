@@ -77,11 +77,12 @@ $ tsc -w / o --watch modo de observador
 
 ## Instalar Paquetes desde npm
 $ ng i [nombre paquete] / ng install [nombre paquete]
+$ ng i jquery bootstrap popper --save
 
 Ej.
 npm install bootstrap
 npm i fontawesome-4.7
-
+npm i popper
 ### GIT:
 
 ### Actualizar git por comandos

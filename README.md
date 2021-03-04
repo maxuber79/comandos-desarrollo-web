@@ -167,6 +167,11 @@ $ git branch [nombre rama]
 ```text
 $ git checkout -b [nombre rama]
 ```
+
+### Cambiar el nombre de la rama master
+```text
+$ git branch -M [nombre nuevo ej. main]
+```
 ### Mostrar las ramas existente
 ```text
 $ git branch o git status

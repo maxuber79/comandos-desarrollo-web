@@ -78,6 +78,11 @@ npm i fontawesome-4.7
 npm i popper
 npm i @popperjs/core
 ```
+
+### Desintalar dependencia
+```text 
+npm uninstall <package-name>
+```	
 ### Reinstalar Node_modules de angular bajado desde repositorios
 ```text 
 $ npm install --save-dev @angular-devkit/build-angular

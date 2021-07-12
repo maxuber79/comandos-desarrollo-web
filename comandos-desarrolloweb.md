@@ -49,6 +49,10 @@ Nota:
 -is Eliminar archiv scss/css/sass
 --skipTests Eliminar los archivos de pruebas
 "--skip-tests" 0 "--skipTests /  Crear unmodulo sin el archivo spec.ts
+
+## Crear un modulo con varias dependencias y subcarpetas
+$ ng g m components/pages/carpeta-ejem/nombre-modulo -m=app --route nombre-modulo --flat
+$ ng g m components/pages/ejemplo/nombre-modulo -m=app --route nombre-modulo
 	
 ## Abrir aplicación:
 $ ng serve -o / ng serve --port 4401  
@@ -83,6 +87,9 @@ Ej.
 npm install bootstrap
 npm i fontawesome-4.7
 npm i popper
+
+## Intalar NPM e iniciar el proyecto en angular
+$ npm i && ng serve -o
 ### GIT:
 
 ### Actualizar git por comandos

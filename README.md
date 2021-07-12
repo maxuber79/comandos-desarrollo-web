@@ -197,34 +197,44 @@ $ git remote -v
 ```text
 $ origin  https://github.com/OWNER/REPOSITORY.git (fetch)
 $ origin  https://github.com/OWNER/REPOSITORY.git (push)
-$ destination  https://github.com/FORKER/REPOSITORY.git (fetch)
-$ destination  https://github.com/FORKER/REPOSITORY.git (push)
-$ git remote rm destination
+$ github  https://github.com/FORKER/REPOSITORY.git (fetch)
+$ github  https://github.com/FORKER/REPOSITORY.git (push)
+```
+
+### Agregar remoto y agregar remoto adicional
+```text
+$ git remote add origin git@bitbucket.org:user/myproject.git
+or
+$ git remote add origin git@bitbucket.org:user/myproject.git
 ```
 ### Eliminar remoto
 ```text
-$ git remote -v
+$ git remote rm github
 ```
 ### Verificar que se haya ido
 ```text
+$ git remote -v
 $ origin  https://github.com/OWNER/REPOSITORY.git (fetch)
 $ origin  https://github.com/OWNER/REPOSITORY.git (push)
-$ git remote -v
+...
 ```
 ### Ver remotos existentes
 ```text
+$ git remote -v
 $ origin  https://github.com/OWNER/REPOSITORY.git (fetch)
 $ origin  https://github.com/OWNER/REPOSITORY.git (push)
+
+```
+### Cambiar el nombre del remoto
+```text
 $ git remote rename origin destination
+$ git remote rename [nombre actual remoto] [nombre nuevo]
 ```
-### Cambiar el nombre del remoto de 'origen' a 'destino'
+### Realizar un push al remoto o aun remoto en especifico
 ```text
-$ git remote -v
-```
-### Verificar el nombre nuevo del remoto
-```text
-$ destination  https://github.com/OWNER/REPOSITORY.git (fetch)
-$ destination  https://github.com/OWNER/REPOSITORY.git (push)
+$ git push origin master
+or
+$ git push github master
 ```
 
 ``` javascript Esc + w + q ```

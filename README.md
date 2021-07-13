@@ -40,11 +40,12 @@ nota: npm esta por defecto si instalas node js
 ### Crear un nuevo proyecto de Angular CLI
 ```text $ ng new my-first-project```
 
-### Crear un nuevo modulo en Angular
+### Crear un nuevo component/modulo/servicio etc en Angular
 ```text 
 $ ng g c template_parts/header --skip-tests
-$ ng g s services/productos --skipTests 
-$ ng g c components/MyName -is --skipTests
+$ ng g s services/name_service --skipTests 
+$ ng g c components/name_component -is --skipTests
+$ ng g m micarpeta/name_modulo
 ```
 
 Nota:
@@ -52,6 +53,7 @@ Nota:
 - -is Eliminar archiv scss/css/sass
 - --skipTests Eliminar los archivos de pruebas
 - "--skip-tests" 0 "--skipTests /  Crear unmodulo sin el archivo spec.ts
+- Para cre un componente, modulo o servicio sin carpata se debe agregar --flat
 
 	
 ### Abrir aplicación:

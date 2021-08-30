@@ -93,7 +93,7 @@ $ npm install --save-dev @angular-devkit/build-angular
 ```text 
 $ rm -rf node_modules && npm i	
 ```
-### TYPESCRIPT:
+# TYPESCRIPT:
 ```text 
 $ tsc --init /crear archivo de configuracion de typescript
 $ tsc -w / o --watch modo de observador
@@ -107,7 +107,7 @@ Ej.
 - npm install bootstrap
 - npm i fontawesome-4.7
 
-## GIT:
+# GIT:
 
 ### Actualizar git por comandos
 ```text

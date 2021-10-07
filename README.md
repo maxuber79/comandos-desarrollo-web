@@ -97,6 +97,12 @@ or
 ```text 
 $ rm -rf node_modules && npm i	
 ```
+### Instalar node_modules
+
+```text 
+$ npm i	
+```
+
 # TYPESCRIPT:
 ```text 
 $ tsc --init /crear archivo de configuracion de typescript

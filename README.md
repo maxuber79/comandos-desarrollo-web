@@ -91,6 +91,10 @@ $ npm install --save-dev @angular-devkit/build-angular
 ```
 ### Eliminar carpeta node_modules
 ```text 
+$ rm -rf node_modules
+```
+or
+```text 
 $ rm -rf node_modules && npm i	
 ```
 # TYPESCRIPT:

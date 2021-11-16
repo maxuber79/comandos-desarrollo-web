@@ -185,9 +185,15 @@ $ git branch [nombre rama]
 $ git checkout -b [nombre rama]
 ```
 
-### Cambiar el nombre de la rama master
+### Cambiar el nombre de la rama master y cambiar nombre de ramas creadas
 ```text
-$ git branch -M [nombre nuevo ej. main]
+$ git branch -M <nuevo-nombre>
+$ git branch -m <nuevo-nombre>
+```
+
+## Cambiar nombre de rama, si estás en otra rama 
+```text
+$ git branch -m <nombre-antiguo> <nuevo-nombre>
 ```
 ### Mostrar las ramas existente
 ```text

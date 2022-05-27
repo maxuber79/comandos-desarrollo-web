@@ -211,6 +211,17 @@ $ git diff [nombre rama] master
 ```text
 $ git merge [nombre rama]
 ```
+
+### Borrar rama local
+```text
+$ git branch -d nombre_rama
+$ git branch -D nombre-rama 
+```
+
+### Borrar rama remota
+```text
+git push <remote> --delete <branch>
+```
 ### Borrar rama que ya se unieron
 ```text
 $ git branch -d [nombre rama]

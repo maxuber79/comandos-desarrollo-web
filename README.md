@@ -274,6 +274,10 @@ $ git push github master
 ``` javascript Esc + w + q ```
 
 
-
+### Crear key SSH
+```text
+$ ssh-keygen
+$ cat C:\Users\cmunozm/.ssh/id_rsa.pub
+```
 
 

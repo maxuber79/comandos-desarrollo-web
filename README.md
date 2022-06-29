@@ -174,7 +174,10 @@ $ git remote rename origin [nuevo nombre]
 ```text
 $ git remote rm destination
 ```
-
+### Cambiar nombre de la rama default:
+```text
+git branch -m master main
+```
 ### crear una nueva rama
 ```text
 $ git branch [nombre rama]

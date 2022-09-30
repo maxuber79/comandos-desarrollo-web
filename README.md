@@ -1,7 +1,7 @@
 # INSTALACIONES DE PROGRAMAS DE DESARROLLO
 
 ### Git | url:https://git-scm.com/
-``` text Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
+``` Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
 
 ## Configuración inicial Git
 ```
@@ -11,23 +11,32 @@ $ git config --global user.email johndoe@example.com
 ## Versión Git
 ```$git --version```
 
+### Update git
+```$ git update-git-for-windows```
+
 ### Version de NodeJS | url:https://nodejs.org/es/
-```text $ node -v ```
+```$ node -v ```
 
 ### Version de NPM | url:https://www.npmjs.com/
-```text $ npm -v ```
+```$ npm -v ```
 
 nota: npm esta por defecto si instalas node js
 
 ### Instalar TypeScript | url: https://www.typescriptlang.org/es/
-```text $ npm install -g typescript ```
+```$ npm install -g typescript ```
 
-### Versión de TypeScript
-```text $ tsc --version```
+## Versión de TypeScript
+```$ tsc --version```
 
-### Version Angular CLI
-```text $ ng v / ng version```
+## Update TypeScript
+```$ npm update -g typescript@latest```
 
+### Version Angular CLI global
+```$ ng v / ng version```
+### Update Angular CLI global
+```$ npm uninstall -g @angular/cli```
+```$ npm cache clean --force```
+```$ npm i -g @angular/cli```
 
 ## INSTALACIONES PARA ANGULAR CLI
 
@@ -41,7 +50,7 @@ nota: npm esta por defecto si instalas node js
 ```text $ ng new my-first-project```
 
 ### Crear un nuevo component/modulo/servicio etc en Angular
-```text 
+```
 $ ng g c template_parts/header --skip-tests
 $ ng g s services/name_service --skipTests 
 $ ng g c components/name_component -is --skipTests
@@ -119,10 +128,6 @@ Ej.
 
 # GIT:
 
-### Actualizar git por comandos
-```text
-$ git update-git-for-windows
-```
 ### Iniciar un proyecto git
 ```text
 $ git init

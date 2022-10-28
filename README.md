@@ -64,7 +64,6 @@ Nota:
 - "--skip-tests" 0 "--skipTests /  Crear unmodulo sin el archivo spec.ts
 - Para cre un componente, modulo o servicio sin carpata se debe agregar --flat
 
-	
 ### Abrir aplicación:
 ```text 
 $ ng serve -o / ng serve --port 4401  
@@ -279,6 +278,15 @@ or
 $ git push github master
 ```
 
+### Como realizar un Release
+```text
+$git tag -a v1.0.0 -m "Full diseño"
+```
+
+### Subir los tag al repositorio Ver todos los tag
+```text
+$git push --tag 
+```
 ``` javascript Esc + w + q ```
 
 

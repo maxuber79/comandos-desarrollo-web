@@ -1,7 +1,7 @@
 # INSTALACIONES DE PROGRAMAS DE DESARROLLO
 
 ### Git | url:https://git-scm.com/
-``` text Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
+``` Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
 
 ## Configuración inicial Git
 ```
@@ -11,23 +11,34 @@ $ git config --global user.email johndoe@example.com
 ## Versión Git
 ```$git --version```
 
+### Update git
+```$ git update-git-for-windows```
+
 ### Version de NodeJS | url:https://nodejs.org/es/
-```text $ node -v ```
+```$ node -v ```
 
 ### Version de NPM | url:https://www.npmjs.com/
-```text $ npm -v ```
+```$ npm -v ```
 
 nota: npm esta por defecto si instalas node js
 
 ### Instalar TypeScript | url: https://www.typescriptlang.org/es/
-```text $ npm install -g typescript ```
+```$ npm install -g typescript ```
 
-### Versión de TypeScript
-```text $ tsc --version```
+## Versión de TypeScript
+```$ tsc --version```
 
-### Version Angular CLI
-```text $ ng v / ng version```
+## Update TypeScript
+```$ npm update -g typescript@latest```
 
+### Version Angular CLI global
+```$ ng v / ng version```
+### Update Angular CLI global
+```
+$ npm uninstall -g @angular/cli
+$ npm cache clean --force
+$ npm i -g @angular/cli
+```
 
 ## INSTALACIONES PARA ANGULAR CLI
 
@@ -41,7 +52,7 @@ nota: npm esta por defecto si instalas node js
 ```text $ ng new my-first-project```
 
 ### Crear un nuevo component/modulo/servicio etc en Angular
-```text 
+```
 $ ng g c template_parts/header --skip-tests
 $ ng g s services/name_service --skipTests 
 $ ng g c components/name_component -is --skipTests
@@ -55,7 +66,6 @@ Nota:
 - "--skip-tests" 0 "--skipTests /  Crear unmodulo sin el archivo spec.ts
 - Para cre un componente, modulo o servicio sin carpata se debe agregar --flat
 
-	
 ### Abrir aplicación:
 ```text 
 $ ng serve -o / ng serve --port 4401  
@@ -119,10 +129,6 @@ Ej.
 
 # GIT:
 
-### Actualizar git por comandos
-```text
-$ git update-git-for-windows
-```
 ### Iniciar un proyecto git
 ```text
 $ git init
@@ -174,7 +180,10 @@ $ git remote rename origin [nuevo nombre]
 ```text
 $ git remote rm destination
 ```
-
+### Cambiar nombre de la rama default:
+```text
+git branch -m master main
+```
 ### crear una nueva rama
 ```text
 $ git branch [nombre rama]
@@ -184,10 +193,7 @@ $ git branch [nombre rama]
 ```text
 $ git checkout -b [nombre rama]
 ```
-### Cambiar nombre de la rama default:
-```text
-git branch -m master main
-```
+
 ### Cambiar el nombre de la rama master y cambiar nombre de ramas creadas
 ```text
 $ git branch -M <nuevo-nombre>
@@ -276,12 +282,9 @@ $ git push github master
 
 ``` javascript Esc + w + q ```
 
+
 ### Crear key SSH
 ```text
 $ ssh-keygen
 $ cat C:\Users\cmunozm/.ssh/id_rsa.pub
 ```
-
-
-
-

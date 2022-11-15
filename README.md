@@ -38,7 +38,7 @@ nota: npm esta por defecto si instalas node js
 ```$ npm cache clean --force```
 ```$ npm i -g @angular/cli```
 
-## INSTALACIONES PARA ANGULAR CLI
+# INSTALACIONES PARA ANGULAR CLI
 
 ### Instalar AngularCLI de forma global | url:https://angular.io/
 ```text $ npm install -g @angular/cli```
@@ -47,7 +47,20 @@ nota: npm esta por defecto si instalas node js
 ```text $ ng update @angular/cli @angular/core```
 
 ### Crear un nuevo proyecto de Angular CLI
-```text $ ng new my-first-project```
+```text $ ng new [name_first_project]```
+
+
+### Instalación de una versión específica de angular con angular cli
+Paso 1:
+```$ npm uninstall -g @angular/cli```
+Paso 2:
+```$ npm cache clean```
+Paso 3:
+```$ npm cache verify```
+Paso 4 (Instalar una versión específica angular-cli):
+```$ npm install -g @angular/cli@wished.version.here```
+Paso 5 (Crear un proyecto):
+```$ ng new you-app-name```
 
 ### Crear un nuevo component/modulo/servicio etc en Angular
 ```

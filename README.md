@@ -123,16 +123,16 @@ Paso 5 (Crear un proyecto):
 
 ### Crear un nuevo component/modulo/servicio etc en Angular
 ```bash
-$ ng g c template_parts/header --skip-tests
+ng g c template_parts/header --skip-tests
 ```
 ```bash
-$ ng g s services/name_service --skipTests
+ng g s services/name_service --skipTests
 ``` 
 ```bash
-$ ng g c components/name_component --style=none --skip-tests
+ng g c components/name_component --style=none --skip-tests
 ```
 ```bash
-$ ng g m micarpeta/name_modulo
+ng g m micarpeta/name_modulo
 ```
 
 Nota:
@@ -144,7 +144,7 @@ Nota:
 
 ### Abrir aplicación:
 ```text 
-$ ng serve -o / ng serve --port 4401  
+ ng serve -o / ng serve --port 4401  
 ```
 ### Crear servicios:
 ```text 

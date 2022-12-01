@@ -5,14 +5,14 @@
 ### Git | url:https://git-scm.com/
 ``` Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
 
-## Configuración inicial Git
+### Configuración inicial Git
 ```bash
 git config --global user.name "John Doe"
 ```
 ```bash
 git config --global user.email johndoe@example.com
 ```
-## Versión Git
+### Versión Git
 ```bash
 git --version
 ```
@@ -20,7 +20,7 @@ git --version
 git -v
 ```
 
-## Update git desde consola
+### Update git desde consola
 ```bash
  git update-git-for-windows
  ```
@@ -67,13 +67,27 @@ npm update -g typescript@latest
 ```
 
 ### Version Angular CLI global
-```$ ng v / ng version```
+```bash
+ng version
+```
+```bash
+ng v
+```
 ### Update Angular CLI global
-```$ npm uninstall -g @angular/cli```
-```$ npm cache clean --force```
-```$ npm i -g @angular/cli```
+Paso 1:
+```bash
+npm uninstall -g @angular/cli
+```
+Paso 2:
+```bash
+npm cache clean --force
+```
+Paso 3:
+```bash
+npm i -g @angular/cli
+```
 
-# INSTALACIONES PARA ANGULAR CLI
+## INSTALACIONES PARA ANGULAR CLI
 
 ### Instalar AngularCLI de forma global | url:https://angular.io/
 ```text $ npm install -g @angular/cli```
@@ -87,21 +101,37 @@ npm update -g typescript@latest
 
 ### Instalación de una versión específica de angular con angular cli
 Paso 1:
-```$ npm uninstall -g @angular/cli```
+```bash
+ npm uninstall -g @angular/cli
+ ```
 Paso 2:
-```$ npm cache clean```
+```bash
+npm cache clean
+```
 Paso 3:
-```$ npm cache verify```
+```bash
+ npm cache verify
+ ```
 Paso 4 (Instalar una versión específica angular-cli):
-```$ npm install -g @angular/cli@wished.version.here```
+```bash
+ npm install -g @angular/cli@[version]
+ ```
 Paso 5 (Crear un proyecto):
-```$ ng new you-app-name```
+```bash
+ ng new you-app-name
+ ```
 
 ### Crear un nuevo component/modulo/servicio etc en Angular
-```
+```bash
 $ ng g c template_parts/header --skip-tests
-$ ng g s services/name_service --skipTests 
-$ ng g c components/name_component -is --skipTests
+```
+```bash
+$ ng g s services/name_service --skipTests
+``` 
+```bash
+$ ng g c components/name_component --style=none --skip-tests
+```
+```bash
 $ ng g m micarpeta/name_modulo
 ```
 

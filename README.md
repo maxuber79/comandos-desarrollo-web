@@ -1,35 +1,70 @@
-# INSTALACIONES DE PROGRAMAS DE DESARROLLO
+<div align="center">
+    <h1>INSTALACIONES DE PROGRAMAS DE DESARROLLO</h1>
+</div>
 
 ### Git | url:https://git-scm.com/
 ``` Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
 
 ## Configuración inicial Git
+```bash
+git config --global user.name "John Doe"
 ```
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+```bash
+git config --global user.email johndoe@example.com
 ```
 ## Versión Git
-```$git --version```
+```bash
+git --version
+```
+```bash
+git -v
+```
 
-### Update git
-```$ git update-git-for-windows```
+## Update git desde consola
+```bash
+ git update-git-for-windows
+ ```
 
-### Version de NodeJS | url:https://nodejs.org/es/
-```$ node -v ```
+### Version de NodeJS
+Desde el siguiente link se podra descargar la ultma versión LTS [Node.js](https://nodejs.org/en/)
+```bash
+node --version
+```
+```bash
+node -v
+```
 
-### Version de NPM | url:https://www.npmjs.com/
-```$ npm -v ```
+### Version de NPM 
+Desde el siguiente link se podran ver o buscar paquetes [pmjs](https://www.npmjs.com/)
+```bash
+npm --version
+```
+```bash
+npm -v
+```
+Actualizar a la ultima versión del npm de forma global
+```bash
+npm install -g npm@latest
+```
+`nota: npm esta por defecto si instalas node js`
 
-nota: npm esta por defecto si instalas node js
+### Instalar TypeScript 
+Desde el siguiente link se podra ver herramienta [TypeScript](https://www.typescriptlang.org/es/)
 
-### Instalar TypeScript | url: https://www.typescriptlang.org/es/
-```$ npm install -g typescript ```
-
-## Versión de TypeScript
-```$ tsc --version```
-
-## Update TypeScript
-```$ npm update -g typescript@latest```
+Instalar de forma global
+```bash
+ npm install -g typescript
+```
+```bash
+tsc --version
+```
+```bash
+tsc -v
+```
+Actualizar a la ultima versión de TypeScript de forma global
+```bash
+npm update -g typescript@latest
+```
 
 ### Version Angular CLI global
 ```$ ng v / ng version```

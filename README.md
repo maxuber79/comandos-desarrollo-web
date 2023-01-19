@@ -98,6 +98,12 @@ npm i -g @angular/cli
 ### Crear un nuevo proyecto de Angular CLI
 ```text $ ng new [name_first_project]```
 
+### Crear un nuevo proyecto con routing/scss/sin archvios de test:
+
+```
+ng new [name_first_project] --rounting --style scss --skip-tests 
+```
+
 
 ### Instalación de una versión específica de angular con angular cli
 Paso 1:
@@ -121,19 +127,27 @@ Paso 5 (Crear un proyecto):
  ng new you-app-name
  ```
 
-### Crear un nuevo component/modulo/servicio etc en Angular
+### Crear un nuevo component/modulo/servicio/interface etc en Angular
+
 ```bash
-ng g c template_parts/header --skip-tests
+ng g c template_parts/header --skip-tests --flat
 ```
 ```bash
-ng g s services/name_service --skipTests
+ng g s services/[name] --skip-tests
 ``` 
 ```bash
-ng g c components/name_component --style=none --skip-tests
+ng g c components/[name] --style=none --skip-tests
 ```
 ```bash
-ng g m micarpeta/name_modulo
+ng g m micarpeta/[name]
 ```
+```bash
+ng g i micarpeta/[name]
+```
+```bash
+ng generate p [name] --skip-tests
+```
+
 
 Nota:
 

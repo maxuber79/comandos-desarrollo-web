@@ -395,4 +395,18 @@ Desde el siguiente link se podra al sitio web de [Nest.js](https://docs.nestjs.c
 ```bash
 nest -v
 ```
+### Para iniciar el proyecto
+
+```bash
+nest start --watch
+```
+
+### Crear un primer controlador, se le agrega la bandera --no-spec para no agregar archiv de prueba
+```bash
+nest g co
+```
+```bash
+nest generate controller
+```
+
 

@@ -1,43 +1,90 @@
-# INSTALACIONES DE PROGRAMAS DE DESARROLLO
+<div align="center">
+    <h1>INSTALACIONES DE PROGRAMAS DE DESARROLLO</h1>
+</div>
 
 ### Git | url:https://git-scm.com/
 ``` Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
 
-## Configuración inicial Git
+### Configuración inicial Git
+```bash
+git config --global user.name "John Doe"
 ```
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+```bash
+git config --global user.email johndoe@example.com
 ```
-## Versión Git
-```$git --version```
+### Versión Git
+```bash
+git --version
+```
+```bash
+git -v
+```
 
-### Update git
-```$ git update-git-for-windows```
+### Update git desde consola
+```bash
+ git update-git-for-windows
+ ```
 
-### Version de NodeJS | url:https://nodejs.org/es/
-```$ node -v ```
+### Version de NodeJS
+Desde el siguiente link se podra descargar la ultma versión LTS [Node.js](https://nodejs.org/en/)
+```bash
+node --version
+```
+```bash
+node -v
+```
 
-### Version de NPM | url:https://www.npmjs.com/
-```$ npm -v ```
+### Version de NPM 
+Desde el siguiente link se podran ver o buscar paquetes [pmjs](https://www.npmjs.com/)
+```bash
+npm --version
+```
+```bash
+npm -v
+```
+Actualizar a la ultima versión del npm de forma global
+```bash
+npm install -g npm@latest
+```
+`nota: npm esta por defecto si instalas node js`
 
-nota: npm esta por defecto si instalas node js
+### Instalar TypeScript 
+Desde el siguiente link se podra ver herramienta [TypeScript](https://www.typescriptlang.org/es/)
 
-### Instalar TypeScript | url: https://www.typescriptlang.org/es/
-```$ npm install -g typescript ```
-
-## Versión de TypeScript
-```$ tsc --version```
-
-## Update TypeScript
-```$ npm update -g typescript@latest```
+Instalar de forma global
+```bash
+ npm install -g typescript
+```
+```bash
+tsc --version
+```
+```bash
+tsc -v
+```
+Actualizar a la ultima versión de TypeScript de forma global
+```bash
+npm update -g typescript@latest
+```
 
 ### Version Angular CLI global
-```$ ng v / ng version```
-### Update Angular CLI global
+```bash
+ng version
 ```
-$ npm uninstall -g @angular/cli
-$ npm cache clean --force
-$ npm i -g @angular/cli
+```bash
+ng v
+```
+### Update Angular CLI global
+Paso 1:
+```bash
+npm uninstall -g @angular/cli
+```
+Paso 2:
+```bash
+npm cache clean --force
+```
+Paso 3:
+```bash
+npm i -g @angular/cli
 ```
 
 ## INSTALACIONES PARA ANGULAR CLI
@@ -49,15 +96,58 @@ $ npm i -g @angular/cli
 ```text $ ng update @angular/cli @angular/core```
 
 ### Crear un nuevo proyecto de Angular CLI
-```text $ ng new my-first-project```
+```text $ ng new [name_first_project]```
 
-### Crear un nuevo component/modulo/servicio etc en Angular
+### Crear un nuevo proyecto con routing/scss/sin archvios de test:
+
 ```
-$ ng g c template_parts/header --skip-tests
-$ ng g s services/name_service --skipTests 
-$ ng g c components/name_component -is --skipTests
-$ ng g m micarpeta/name_modulo
+ng new [name_first_project] --rounting --style scss --skip-tests 
 ```
+
+
+### Instalación de una versión específica de angular con angular cli
+Paso 1:
+```bash
+ npm uninstall -g @angular/cli
+ ```
+Paso 2:
+```bash
+npm cache clean
+```
+Paso 3:
+```bash
+ npm cache verify
+ ```
+Paso 4 (Instalar una versión específica angular-cli):
+```bash
+ npm install -g @angular/cli@[version]
+ ```
+Paso 5 (Crear un proyecto):
+```bash
+ ng new you-app-name
+ ```
+
+### Crear un nuevo component/modulo/servicio/interface etc en Angular
+
+```bash
+ng g c template_parts/header --skip-tests --flat
+```
+```bash
+ng g s services/[name] --skip-tests
+``` 
+```bash
+ng g c components/[name] --style=none --skip-tests
+```
+```bash
+ng g m micarpeta/[name]
+```
+```bash
+ng g i micarpeta/[name]
+```
+```bash
+ng generate p [name] --skip-tests
+```
+
 
 Nota:
 
@@ -68,7 +158,7 @@ Nota:
 
 ### Abrir aplicación:
 ```text 
-$ ng serve -o / ng serve --port 4401  
+ ng serve -o / ng serve --port 4401  
 ```
 ### Crear servicios:
 ```text 
@@ -280,6 +370,15 @@ or
 $ git push github master
 ```
 
+### Como realizar un Release
+```text
+$git tag -a v1.0.0 -m "Full diseño"
+```
+
+### Subir los tag al repositorio Ver todos los tag
+```text
+$git push --tag 
+```
 ``` javascript Esc + w + q ```
 
 
@@ -288,3 +387,13 @@ $ git push github master
 $ ssh-keygen
 $ cat C:\Users\cmunozm/.ssh/id_rsa.pub
 ```
+
+
+# NESTJS:
+Desde el siguiente link se podra al sitio web de [Nest.js](https://docs.nestjs.com/)
+
+```bash
+nest -v
+```
+# NESTJS:
+Desde el siguiente link se podra al sitio web de [Nest.js](https://docs.nestjs.com/)

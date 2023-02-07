@@ -408,5 +408,42 @@ nest g co
 ```bash
 nest generate controller
 ```
+# FIREBASE:
+Desde el siguiente link se podra al sitio web de [COnsola de firabase](https://console.firebase.google.com/u/0/)
 
+### Instalando el CLI de Firebase
+El CLI de Firebase nos proporciona varias herramientas para gestionar, visualizar y desplegar a proyectos Firebase. Podemos utilizar npm para instalar el CLI:
 
+```bash
+npm i -g firebase-tools
+```
+
+Una vez que hayamos instalado el CLI, podemos utilizarlo para iniciar sesión. Para ello, podemos utilizar el siguiente comando:
+
+```bash
+firebase login
+```
+
+Para comprobar si hemos iniciado sesión con éxito, podemos ejecutar el siguiente comando:
+```bash
+firebase projects:list
+```
+Deberíamos ver una lista de todos los proyectos Firebase que haya en nuestra cuenta. Y por fin, es hora de empezar con nuestra aplicación Angular.
+
+### Añadiendo Firebase y AngularFire
+Vamos a añadir Firebase y AngularFire a nuestro proyecto. Para ello, utilizaremos el schematic de AngularFire, que se encargará de configurarlo todo. Para ello, ejecutamos el siguiente comando:
+```bash
+ng add @angular/fire
+```
+ Tendremos que contestar a una serie de preguntas, como qué funcionalidades de Firebase queremos configurar. En el caso de que queráis añadir autenticación/Firestore, seleccionad ambas opciones ahora:
+ <p align="center">
+  <br>
+  <img src="https://miro.medium.com/max/1100/0*YLrKtpDauowsnDSG.webp" alt="Angular CLI logo" width="100px" height="108px"/>
+  <br><br>
+  <i>The Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold,
+    <br>and maintain Angular applications directly from a command shell.</i>
+  <br>
+</p>
+ Una vez seleccionadas las opciones que queremos, se nos preguntará por la cuenta de Firebase que queremos utilizar, y qué proyecto queremos configurar. Por tanto, tendremos que seleccionar el proyecto que creamos anteriormente, y posteriormente seleccionaremos la app que también creamos en los pasos anteriores.
+
+Una vez hecho todo esto, podremos ver que el schematic se ha encargado de llevar a cabo toda la configuración de Firebase automáticamente. ¡Genial! ¡Es el momento de empezar a construir nuestra app

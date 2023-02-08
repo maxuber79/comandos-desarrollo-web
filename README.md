@@ -440,8 +440,6 @@ ng add @angular/fire
   <br>
   <img src="https://miro.medium.com/max/1100/0*YLrKtpDauowsnDSG.webp" alt="Angular CLI logo" width="100px" height="108px"/>
   <br><br>
-  <i>The Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold,
-    <br>and maintain Angular applications directly from a command shell.</i>
   <br>
 </p>
  Una vez seleccionadas las opciones que queremos, se nos preguntará por la cuenta de Firebase que queremos utilizar, y qué proyecto queremos configurar. Por tanto, tendremos que seleccionar el proyecto que creamos anteriormente, y posteriormente seleccionaremos la app que también creamos en los pasos anteriores.

@@ -438,7 +438,7 @@ ng add @angular/fire
  Tendremos que contestar a una serie de preguntas, como qué funcionalidades de Firebase queremos configurar. En el caso de que queráis añadir autenticación/Firestore, seleccionad ambas opciones ahora:
  <p align="center">
   <br>
-  <img src="https://miro.medium.com/max/1100/0*YLrKtpDauowsnDSG.webp" alt="Angular CLI logo" width="100px" height="108px"/>
+  <img src="https://miro.medium.com/max/1100/0*YLrKtpDauowsnDSG.webp" alt="Angular CLI logo" width="300px" height="auto"/>
   <br><br>
   <br>
 </p>

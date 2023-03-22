@@ -445,3 +445,10 @@ ng add @angular/fire
  Una vez seleccionadas las opciones que queremos, se nos preguntará por la cuenta de Firebase que queremos utilizar, y qué proyecto queremos configurar. Por tanto, tendremos que seleccionar el proyecto que creamos anteriormente, y posteriormente seleccionaremos la app que también creamos en los pasos anteriores.
 
 Una vez hecho todo esto, podremos ver que el schematic se ha encargado de llevar a cabo toda la configuración de Firebase automáticamente. ¡Genial! ¡Es el momento de empezar a construir nuestra app
+
+### Añadiendo carpetas y archivos por consola
+<ul dir="auto">
+<li><code>mkdir [name folder]</code> : Agregar un carpeta al proyecto.</li>
+<li><code>touch [name file mas extension]</code> : Agregar un archivo con su extensión.</li>
+
+</ul>

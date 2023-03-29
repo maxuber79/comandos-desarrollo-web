@@ -90,22 +90,29 @@ npm i -g @angular/cli
 ## INSTALACIONES PARA ANGULAR CLI
 
 ### Instalar AngularCLI de forma global | url:https://angular.io/
-```text $ npm install -g @angular/cli```
+```bash
+	npm install -g @angular/cli
+```
 
 ### Actualizar Agular:
-```text $ ng update @angular/cli @angular/core```
+```bash
+ng update @angular/cli @angular/core
+```
 
 ### Crear un nuevo proyecto de Angular CLI
-```text $ ng new [name_first_project]```
+```bash 
+ng new [name_first_project]
+```
 
 ### Crear un nuevo proyecto con routing/scss/sin archvios de test:
 
-```
+```bash
 ng new [name_first_project] --rounting --style scss --skip-tests 
 ```
 
 
 ### Instalación de una versión específica de angular con angular cli
+
 Paso 1:
 ```bash
  npm uninstall -g @angular/cli
@@ -157,23 +164,26 @@ Nota:
 - Para cre un componente, modulo o servicio sin carpata se debe agregar --flat
 
 ### Abrir aplicación:
-```text 
- ng serve -o / ng serve --port 4401  
+```bash 
+ng serve -o / ng serve --port 4401  
 ```
 ### Crear servicios:
-```text 
-$ ng g s services/infoPaginas
+```bash
+ng g s services/infoPaginas
 ```
 ### Aplicacion pruebas en producción:
-```text 
-$ ng build --prod
+```bash
+ng build --prod
 ```
 ### Instalar bootstrap + dependencias:skip
-```text 
+```bash
+ng i [nombre paquete] / ng install [nombre paquete]
+```
+```bash
+ng i jquery bootstrap popper --save
+```
 
-$ ng i [nombre paquete] / ng install [nombre paquete]
-$ ng i jquery bootstrap popper --save
-
+```text
 Ej.
 npm install bootstrap
 npm i fontawesome-4.7
@@ -182,25 +192,27 @@ npm i @popperjs/core
 ```
 
 ### Desintalar dependencia
-```text 
+```bash 
 npm uninstall <package-name>
 ```	
 ### Reinstalar Node_modules de angular bajado desde repositorios
-```text 
-$ npm install --save-dev @angular-devkit/build-angular
+
+```bash 
+npm install --save-dev @angular-devkit/build-angular
 ```
 ### Eliminar carpeta node_modules
-```text 
-$ rm -r node_modules
+```bash  
+rm -r node_modules
 ```
 or
-```text 
-$ rm -rf node_modules
+
+```bash 
+rm -rf node_modules
 ```
 ### Instalar node_modules
 
-```text 
-$ npm i	
+```bash 
+npm i	
 ```
 
 # TYPESCRIPT:
@@ -210,121 +222,128 @@ $ tsc -w / o --watch modo de observador
 ```
 
 ### Instalar Paquetes desde npm
-```text 
-$ ng i [nombre paquete] / ng install [nombre paquete]
+```bash
+ng install [nombre paquete]
 ```
+or
+```bash
+ng i [nombre paquete]
+```
+
+```text
 Ej.
 - npm install bootstrap
 - npm i fontawesome-4.7
+```
 
 # GIT:
 
 ### Iniciar un proyecto git
-```text
-$ git init
+```bash
+git init
 ```
 ### Pasar el proyecto al stage
-```text
-$ git add .
+```bash
+git add .
 ```
 
 ### Deshacer el stage
-```text
-$ git reset .
+```bash
+git reset .
 ```
 ### Pasar el proyecto a un commit
-```text
-$ git commit -m "primer commit"
+```bash
+git commit -m "primer commit"
 ```
 ### Comando para agregar al stage y el commit
-```text
-$ git commit -am "Lorem ipsun dolor"
+```bash
+git commit -am "Lorem ipsun dolor"
 ```
 
 ### Editar el nombre del commit
-```text
-$ git commit --amend
+```bash
+git commit --amend
 ```
 
 ### Reconstruir el proyecto desde ultimo commit
-```text
-$ git checkout --.
+```bash
+git checkout --.
 ```
 
 ### Actualizar git desde consola:
-```text
+```bash
 $ git update-git-for-windows
 ```
 
 ### Agregar un remoto:
-```text
+```bash
 $ git remote add origin [URL repositorio]
 ```
 
 ### Cambiar nombre del remote
-```text
+```bash
 $ git remote rename origin [nuevo nombre]
 ```
 
 ### Borrar remoto:
-```text
+```bash
 $ git remote rm destination
 ```
 ### Cambiar nombre de la rama default:
-```text
+```bash
 git branch -m master main
 ```
 ### crear una nueva rama
-```text
-$ git branch [nombre rama]
+```bash
+git branch [nombre rama]
 ```
 
 ### Crear una nueva rama y quedarse en ella
-```text
-$ git checkout -b [nombre rama]
+```bash
+git checkout -b [nombre rama]
 ```
 
 ### Cambiar el nombre de la rama master y cambiar nombre de ramas creadas
-```text
-$ git branch -M <nuevo-nombre>
-$ git branch -m <nuevo-nombre>
+```bash
+git branch -M <nuevo-nombre>
+git branch -m <nuevo-nombre>
 ```
 
 ## Cambiar nombre de rama, si estás en otra rama 
-```text
-$ git branch -m <nombre-antiguo> <nuevo-nombre>
+```bash
+git branch -m <nombre-antiguo> <nuevo-nombre>
 ```
 ### Mostrar las ramas existente
-```text
-$ git branch o git status
+```bash
+git branch o git status
 ```
 ### Moverse a la rama creada
-```text
-$ git checkout [nomre rama]
+```bash
+git checkout <name branch>
 ```
 ### Ver que diferencias hay entre las ramas
-```text
-$ git diff [nombre rama] master
+```bash
+git diff <name branch> master
 ```
 ### Unir ramas
-```text
-$ git merge [nombre rama]
+```bash
+git merge <name branch>
 ```
 
 ### Borrar rama local
-```text
-$ git branch -d nombre_rama
-$ git branch -D nombre-rama 
+```bash
+git branch -d <name branch>
+git branch -D <name branch>
 ```
 
 ### Borrar rama remota
-```text
-git push <remote> --delete <branch>
+```bash
+git push <name remote> --delete <name branch>
 ```
 ### Borrar rama que ya se unieron
-```text
-$ git branch -d [nombre rama]
-$ git remote -v
+```bash
+git branch -d <name branch>
+git remote -v
 ```
 ### Ver los remotos actuales
 ```text
@@ -335,49 +354,58 @@ $ github  https://github.com/FORKER/REPOSITORY.git (push)
 ```
 
 ### Agregar remoto y agregar remoto adicional
-```text
-$ git remote add origin git@bitbucket.org:user/myproject.git
+```bash
+git remote add origin <url remote>
+```
 or
-$ git remote add origin git@bitbucket.org:user/myproject.git
+```bash
+git remote add bitbucket <url remote> ej.git@bitbucket.org:user/myproject.git
 ```
 ### Eliminar remoto
-```text
-$ git remote rm github
+```bash
+git remote rm github
 ```
 ### Verificar que se haya ido
+```bash
+git remote -v
+```
 ```text
-$ git remote -v
 $ origin  https://github.com/OWNER/REPOSITORY.git (fetch)
 $ origin  https://github.com/OWNER/REPOSITORY.git (push)
-...
 ```
 ### Ver remotos existentes
+```bash
+git remote -v
+```
+
 ```text
-$ git remote -v
 $ origin  https://github.com/OWNER/REPOSITORY.git (fetch)
 $ origin  https://github.com/OWNER/REPOSITORY.git (push)
-
 ```
 ### Cambiar el nombre del remoto
-```text
-$ git remote rename origin destination
-$ git remote rename [nombre actual remoto] [nombre nuevo]
+```bash
+git remote rename origin destination
+```
+```bash
+git remote rename <nombre actual remoto> <nombre nuevo>
 ```
 ### Realizar un push al remoto o aun remoto en especifico
-```text
-$ git push origin master
+```bash
+git push origin master
+```
 or
-$ git push github master
+```bash
+git push github master
 ```
 
 ### Como realizar un Release
-```text
-$git tag -a v1.0.0 -m "Full diseño"
+```bash
+git tag -a v1.0.0 -m "Full diseño"
 ```
 
 ### Subir los tag al repositorio Ver todos los tag
-```text
-$git push --tag 
+```bash
+git push --tag 
 ```
 ``` javascript Esc + w + q ```
 

@@ -5,7 +5,7 @@
 ### [GIT](https://git-scm.com/)
 ``` Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
 
-### Configuración inicial global de GIT en em Windows
+### Configuración inicial global de GIT en Windows
 
 Paso 1: Agregar un usuario a la configuración global del git
 ```bash
@@ -93,9 +93,9 @@ npm i -g @angular/cli
 
 ## INSTALACIONES PARA ANGULAR CLI
 
-### Instalar AngularCLI de forma global | url:https://angular.io/
+### Instalar AngularCLI de forma global [AngularCLI](url:https://angular.io/) 
 ```bash
-	npm install -g @angular/cli
+npm install -g @angular/cli
 ```
 
 ### Actualizar Agular:

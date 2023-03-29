@@ -2,13 +2,17 @@
     <h1>INSTALACIONES DE PROGRAMAS DE DESARROLLO</h1>
 </div>
 
-### Git | url:https://git-scm.com/
+### [GIT](https://git-scm.com/)
 ``` Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
 
-### Configuración inicial Git
+### Configuración inicial global de GIT en em Windows
+
+Paso 1: Agregar un usuario a la configuración global del git
 ```bash
 git config --global user.name "John Doe"
 ```
+
+Paso 2: Agregar un email a la configuración global del git
 ```bash
 git config --global user.email johndoe@example.com
 ```
@@ -19,8 +23,8 @@ git --version
 ```bash
 git -v
 ```
-
 ### Update git desde consola
+Este comando se utiliza en la consola para actualizar git en Windows
 ```bash
  git update-git-for-windows
  ```
@@ -437,7 +441,7 @@ nest g co
 nest generate controller
 ```
 # FIREBASE:
-Desde el siguiente link se podra al sitio web de [COnsola de firabase](https://console.firebase.google.com/u/0/)
+Desde el siguiente link se podra al sitio web de [Consola de firabase](https://console.firebase.google.com/u/0/)
 
 ### Instalando el CLI de Firebase
 El CLI de Firebase nos proporciona varias herramientas para gestionar, visualizar y desplegar a proyectos Firebase. Podemos utilizar npm para instalar el CLI:

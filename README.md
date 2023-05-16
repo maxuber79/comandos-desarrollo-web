@@ -37,6 +37,21 @@ node --version
 ```bash
 node -v
 ```
+### Update NodeJS desde consola
+Este comando se utiliza en la consola para actualizar Node pero se debe tener instalado NVM , el cual se debe descargar desde el siguiente link, para Windows [nvm-windows](https://github.com/coreybutler/nvm-windows).
+
+Usar nvm para instalar la última versión LTS de Node.js
+```bash
+nvm install --lts
+ ```
+Instalar una versión específica:
+```bash
+nvm install 8.16.2
+ ```
+Lista de versiones instaladas:
+```bash
+nvm ls
+ ```
 
 ### Version de NPM 
 Desde el siguiente link se podran ver o buscar paquetes [pmjs](https://www.npmjs.com/)
@@ -67,7 +82,7 @@ tsc -v
 ```
 Actualizar a la ultima versión de TypeScript de forma global
 ```bash
-npm update -g typescript@latest
+npm update -g typescript
 ```
 
 ### Version Angular CLI global
@@ -113,7 +128,6 @@ ng new [name_first_project]
 ```bash
 ng new [name_first_project] --rounting --style scss --skip-tests 
 ```
-
 
 ### Instalación de una versión específica de angular con angular cli
 
@@ -440,8 +454,17 @@ nest g co
 ```bash
 nest generate controller
 ```
-# FIREBASE:
+# aNGULARFIRE :
 Desde el siguiente link se podra al sitio web de [Consola de firabase](https://console.firebase.google.com/u/0/)
+
+
+
+
+### Versión del angularfire
+```bash
+firebase --version
+```
+
 
 ### Instalando el CLI de Firebase
 El CLI de Firebase nos proporciona varias herramientas para gestionar, visualizar y desplegar a proyectos Firebase. Podemos utilizar npm para instalar el CLI:
@@ -456,11 +479,22 @@ Una vez que hayamos instalado el CLI, podemos utilizarlo para iniciar sesión. P
 firebase login
 ```
 
+para cambiar de cuenta:
+```bash
+firebase login:ci
+```
+
 Para comprobar si hemos iniciado sesión con éxito, podemos ejecutar el siguiente comando:
 ```bash
 firebase projects:list
 ```
 Deberíamos ver una lista de todos los proyectos Firebase que haya en nuestra cuenta. Y por fin, es hora de empezar con nuestra aplicación Angular.
+
+
+Iniciar un proyecto ya existente y seguir las instrucciones:
+```bash
+firebase init
+```
 
 ### Añadiendo Firebase y AngularFire
 Vamos a añadir Firebase y AngularFire a nuestro proyecto. Para ello, utilizaremos el schematic de AngularFire, que se encargará de configurarlo todo. Para ello, ejecutamos el siguiente comando:

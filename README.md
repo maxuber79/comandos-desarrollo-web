@@ -126,7 +126,11 @@ ng new [name_first_project]
 ### Crear un nuevo proyecto con routing/scss/sin archvios de test:
 
 ```bash
-ng new [name_first_project] --rounting --style scss --skip-tests 
+ng new [name_first_project] --routing --style scss --skip-tests 
+```
+
+```bash
+ng new --routing --style scss --skip-tests --directory .
 ```
 
 ### Instalación de una versión específica de angular con angular cli

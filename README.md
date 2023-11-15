@@ -52,6 +52,15 @@ Lista de versiones instaladas:
 ```bash
 nvm ls
  ```
+Trabajar con la ultima versión instalada:
+```bash
+nvm use newest
+ ```
+
+Trabajar con un versión instalada especifica:
+```bash
+nvm use 18.14.1
+ ```
 
 ### Version de NPM 
 Desde el siguiente link se podran ver o buscar paquetes [pmjs](https://www.npmjs.com/)

@@ -531,3 +531,8 @@ Una vez hecho todo esto, podremos ver que el schematic se ha encargado de llevar
 <li><code>touch [name file mas extension]</code> : Agregar un archivo con su extensión.</li>
 
 </ul>
+
+### Iniciar VITE para pruebas TypeScript
+```bash
+npm run dev
+```

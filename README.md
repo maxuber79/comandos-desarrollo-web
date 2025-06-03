@@ -2,6 +2,17 @@
     <h1>INSTALACIONES DE PROGRAMAS DE DESARROLLO</h1>
 </div>
 
+### libraries & dependencies
+
+Sin estos proyectos, este tema inicial de WordPress no estaría donde está hoy.
+
+* [GIT](#git)
+* [NODE JS](#node-js)
+* [NPM](#npm)
+* [TYPESCRIPT](#typescript)
+* [ANGULAR CLI](#angular-cli)
+
+
 ### [GIT](https://git-scm.com/)
 ``` Aqui página de comandos: https://bluuweb.github.io/tutorial-github/ ```
 
@@ -29,6 +40,7 @@ Este comando se utiliza en la consola para actualizar git en Windows
  git update-git-for-windows
  ```
 
+### [NODE JS](https://nodejs.org/en/)
 ### Version de NodeJS
 Desde el siguiente link se podra descargar la ultma versión LTS [Node.js](https://nodejs.org/en/)
 ```bash
@@ -61,8 +73,8 @@ Trabajar con un versión instalada especifica:
 ```bash
 nvm use 18.14.1
  ```
-
-### Version de NPM 
+### [NPM](https://www.npmjs.com/)
+#### Version de NPM 
 Desde el siguiente link se podran ver o buscar paquetes [pmjs](https://www.npmjs.com/)
 ```bash
 npm --version
@@ -76,6 +88,8 @@ npm install -g npm@latest
 ```
 `nota: npm esta por defecto si instalas node js`
 
+
+## [TYPESCRIPT](https://www.typescriptlang.org/es/)
 ### Instalar TypeScript 
 Desde el siguiente link se podra ver herramienta [TypeScript](https://www.typescriptlang.org/es/)
 
@@ -115,7 +129,7 @@ Paso 3:
 npm i -g @angular/cli
 ```
 
-## INSTALACIONES PARA ANGULAR CLI
+## [ANGULAR CLI](url:https://angular.io/)
 
 ### Instalar AngularCLI de forma global [AngularCLI](url:https://angular.io/) 
 ```bash
@@ -244,6 +258,26 @@ rm -rf node_modules
 
 ```bash 
 npm i	
+```
+## Pasos de limpieza y reinstalación actualizados:
+1. Cierra tu servidor de desarrollo (Ctrl + C en la terminal).
+2. Elimina la carpeta node_modules y el archivo package-lock.json (o yarn.lock si usas Yarn):
+
+```bash 
+rm -rf node_modules
+rm package-lock.json
+```
+3. Limpia la caché del CLI de Angular:
+```bash 
+ng cache clean
+```
+4. Vuelve a instalar todas las dependencias (puedes usar npm i):
+```bash 
+npm i
+```
+5. Inicia tu servidor de desarrollo nuevamente
+```bash 
+ng serve
 ```
 
 # TYPESCRIPT:

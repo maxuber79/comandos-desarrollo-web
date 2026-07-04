@@ -2,6 +2,8 @@
 
 Landing page interactiva con comandos de desarrollo web. Tema **Monokai** / **Ámbar**, construida con **Bootstrap 5** + **Bootstrap Icons** + **Devicon**.
 
+➡️ **Live:** [https://maxuber79.github.io/comandos-desarrollo-web/](https://maxuber79.github.io/comandos-desarrollo-web/)
+
 ## 🚀 Stack
 
 | Herramienta | Uso |

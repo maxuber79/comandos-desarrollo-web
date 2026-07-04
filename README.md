@@ -4,6 +4,24 @@ Landing page interactiva con comandos de desarrollo web. Tema **Monokai** / **Á
 
 ➡️ **Live:** [https://maxuber79.github.io/comandos-desarrollo-web/](https://maxuber79.github.io/comandos-desarrollo-web/)
 
+## 📚 Categorías
+
+11 categorías · ~240 comandos listos para copiar:
+
+| # | Categoría | Comandos |
+|---|-----------|----------|
+| 1 | Git | 69 |
+| 2 | Node.js & NPM | 20 |
+| 3 | NVM | 8 |
+| 4 | TypeScript | 8 |
+| 5 | Angular CLI | 36 |
+| 6 | NestJS | 12 |
+| 7 | Firebase & AngularFire | 8 |
+| 8 | Vite | 5 |
+| 9 | **Cloud Foundry** | 43 |
+| 10 | SAP Fiori & BAS | 30 |
+| 11 | Extras & Carpetas | 10 |
+
 ## 🚀 Stack
 
 | Herramienta | Uso |
@@ -45,7 +63,7 @@ npm run copy:vendor  # copia Bootstrap local a /assets/vendor
 │   └── _responsive.scss         # Breakpoints
 ├── js/
 │   ├── app.js                   # Render, copy, search, theme toggle
-│   └── comandos.json            # Base de datos de comandos (~150)
+│   └── comandos.json            # Base de datos de comandos (~240)
 └── assets/
     ├── css/styles.min.css       # CSS compilado
     ├── vendor/                  # Bootstrap local (libre de CDN)

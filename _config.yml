@@ -1,6 +1,6 @@
 # GitHub Pages config
 title: Comandos de Desarrollo Web
-description: Cheatsheet interactivo con tema Monokai/Ambar. Comandos de Git, NPM, NVM, Angular, NestJS, Firebase, Vite y SAP Fiori.
+description: Cheatsheet interactivo con tema Monokai/Ambar. Comandos de Git, NPM, NVM, TypeScript, Angular, NestJS, Firebase, Vite, Cloud Foundry y SAP Fiori.
 
 # No procesar con Jekyll — es sitio estático plano
 remote_theme: false

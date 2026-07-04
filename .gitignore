@@ -1,0 +1,22 @@
+# Dependencias
+node_modules/
+
+# CSS compilado (regeneramos con build)
+assets/css/
+assets/vendor/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode/settings.json
+.idea/

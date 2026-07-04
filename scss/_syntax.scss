@@ -1,0 +1,32 @@
+/* ============================================================
+   _syntax.scss
+   Highlighting "ligero" aplicado a bloques de código (no es Prism,
+   solo estiliza los <span> que añade app.js con lightHL).
+   ============================================================ */
+
+.code {
+  font-family: $font-family-monospace;
+  font-size: .92rem;
+  line-height: 1.55;
+}
+
+.tk-prompt { color: var(--accent); font-weight: 700; }
+.tk-cmd    { color: var(--green);  font-weight: 700; }
+.tk-flag   { color: var(--orange); }
+.tk-str    { color: var(--yellow); }
+.tk-op     { color: var(--blue); }
+.tk-comment{ color: var(--fg-mute); font-style: italic; }
+
+// Faux syntax para tags de categoría / tags en search
+.tk-tag    { color: var(--purple); }
+
+.kbd-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: .8rem;
+  font-family: $font-family-monospace;
+  font-size: .82rem;
+  color: var(--fg-soft);
+}

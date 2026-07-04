@@ -1,0 +1,32 @@
+{
+  "name": "comandos-desarrollo-web",
+  "version": "1.0.0",
+  "description": "Landing page con comandos de desarrollo web (Git, NPM, Angular, NestJS, Firebase, Vite) — listo para GitHub Pages",
+  "private": true,
+  "scripts": {
+    "build:css": "npx sass --no-source-map scss/styles.scss assets/css/styles.min.css --style=compressed",
+    "watch:css": "npx sass --watch scss/styles.scss assets/css/styles.min.css --style=expanded",
+    "copy:vendor": "node scripts/copy-vendor.js",
+    "build": "npm run copy:vendor && npm run build:css",
+    "dev": "npm run build && npm run watch:css",
+    "deploy": "npm run build && echo Listo para subir a GitHub Pages"
+  },
+  "keywords": [
+    "bootstrap",
+    "landing",
+    "github-pages",
+    "comandos",
+    "git",
+    "angular",
+    "nestjs",
+    "firebase"
+  ],
+  "author": "WEBMAIN",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,70 @@
+/* ============================================================
+   _variables.scss
+   Paleta basada en Monokai (Wimer Hazenberg) + acentos Bootstrap
+   ============================================================ */
+
+// Monokai core
+$mono-bg:       #272822;   // fondo principal
+$mono-bg-soft:  #1e1f1c;   // fondo cards / navbar
+$mono-bg-elev:  #2f302a;   // cards elevados / hover
+$mono-line:     #3e3d32;   // bordes sutiles
+$mono-line-2:   #49483e;   // bordes más marcados
+
+$mono-fg:       #f8f8f2;   // texto base
+$mono-fg-soft:  #cfcfc8;   // texto secundario
+$mono-fg-mute:  #8b8b85;   // muted
+
+// Acentos Monokai
+$mono-pink:    #f92672;
+$mono-orange:  #fd971f;
+$mono-yellow:  #e6db74;
+$mono-green:   #a6e22e;
+$mono-blue:    #66d9ef;
+$mono-purple:  #ae81ff;
+$mono-red:     #e73c68;
+
+// Nuestro "accent" principal de marca
+$accent: $mono-pink;
+
+// Bootstrap overrides
+$body-bg:        $mono-bg;
+$body-color:     $mono-fg;
+
+$primary:        $mono-pink;
+$secondary:      $mono-purple;
+$success:        $mono-green;
+$info:           $mono-blue;
+$warning:        $mono-orange;
+$danger:         $mono-red;
+$dark:           $mono-bg;
+$light:          $mono-fg;
+
+$border-color:   $mono-line;
+
+// Tipografía
+$font-family-sans-serif: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace:  "JetBrains Mono", "Fira Code", "Cascadia Code", Consolas, "Courier New", monospace;
+
+$headings-font-family:   "Inter", "Segoe UI", system-ui, sans-serif;
+$headings-font-weight:   700;
+$headings-color:         $mono-fg;
+
+$font-size-base:         1rem;
+$line-height-base:       1.6;
+
+// Otros
+$enable-shadows:         true;
+$enable-rounded:         true;
+$border-radius:          .75rem;
+$border-radius-sm:       .5rem;
+$border-radius-lg:       1rem;
+$border-radius-xl:       1.25rem;
+
+$navbar-padding-y:       1rem;
+
+$card-bg:                $mono-bg-soft;
+$card-border-color:      $mono-line;
+
+// Sombras
+$shadow-card:  0 8px 30px rgba(0,0,0,.35);
+$shadow-hover: 0 18px 50px rgba(249,38,114,.18);

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es" data-theme="monokai">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Cheatsheet interactivo de comandos de desarrollo web: Git, NPM, Angular, NestJS, Firebase y Vite. Copia comandos al portapapeles con un click." />
+  <meta name="theme-color" content="#272822" />
+  <meta name="author" content="WEBMAIN" />
+
+  <title>Comandos de Desarrollo Web · Cheatsheet</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <!-- Vendor local (Bootstrap + Bootstrap Icons) -->
+  <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendor/css/bootstrap-icons.min.css" />
+
+  <!-- Devicon — iconos de herramientas dev (Angular, NestJS, Git, etc.) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Nuestra hoja compilada (la genera `npm run build:css`) -->
+  <link rel="stylesheet" href="assets/css/styles.min.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       NAVBAR
+       ===================================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top app-navbar" aria-label="Navegación principal">
+    <div class="container-xxl">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+        <i class="bi bi-terminal-fill brand-mark"></i>
+        <span class="brand-text">dev<span class="brand-accent">_</span>cheatsheet</span>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Menú">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#todos">Todos los comandos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#atajos">Atajos</a></li>
+        </ul>
+
+        <!-- theme switch para móvil (visible solo en collapse) -->
+        <div class="theme-switch d-md-none mt-3" role="radiogroup" aria-label="Cambiar tema">
+          <button class="theme-btn is-active" data-theme="monokai" type="button" title="Tema Monokai" role="radio" aria-checked="true">
+            <i class="bi bi-moon-stars-fill"></i>
+            <span>Monokai</span>
+          </button>
+          <button class="theme-btn" data-theme="amber" type="button" title="Tema Ambar" role="radio" aria-checked="false">
+            <i class="bi bi-sun-fill"></i>
+            <span>Ambar</span>
+          </button>
+        </div>
+
+        <div class="d-flex gap-2 align-items-center">
+          <button id="searchToggle"
+                  class="btn btn-outline-accent btn-sm"
+                  type="button"
+                  title="Buscar comandos (Ctrl + K)">
+            <i class="bi bi-search"></i>
+            <span class="d-none d-md-inline ms-1">Buscar</span>
+            <kbd class="ms-2 d-none d-lg-inline" style="background: var(--line); color: var(--fg-mute); border: none; border-radius: 4px; padding: 1px 6px;">⌘K</kbd>
+          </button>
+
+          <div class="theme-switch d-none d-md-inline-flex" role="radiogroup" aria-label="Cambiar tema">
+            <button class="theme-btn is-active" data-theme="monokai" type="button" title="Tema Monokai" role="radio" aria-checked="true">
+              <i class="bi bi-moon-stars-fill"></i>
+              <span>Monokai</span>
+            </button>
+            <button class="theme-btn" data-theme="amber" type="button" title="Tema Ambar" role="radio" aria-checked="false">
+              <i class="bi bi-sun-fill"></i>
+              <span>Ambar</span>
+            </button>
+          </div>
+
+          <a class="btn btn-outline-accent btn-sm"
+             href="https://github.com/"
+             target="_blank" rel="noopener">
+            <i class="bi bi-github"></i>
+            <span class="d-none d-md-inline ms-1">GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Panel de búsqueda (fijo debajo del navbar) -->
+  <div class="search-panel" id="searchPanel" aria-hidden="true">
+    <div class="search-inner">
+      <div class="container-xxl">
+        <div class="search-input-wrap">
+          <div class="input-group input-group-lg">
+            <span class="input-group-text bg-transparent border-end-0">
+              <i class="bi bi-search"></i>
+            </span>
+            <input id="searchInput"
+                   type="search"
+                   class="form-control border-start-0"
+                   placeholder="Buscar comando, etiqueta o categoría… (ej: ng new, ssh, firebase)"
+                   autocomplete="off"
+                   aria-label="Buscar comando" />
+            <button class="btn btn-ghost" type="button" id="searchClose" aria-label="Cerrar búsqueda">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+        </div>
+        <div id="searchResults" class="search-results" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+  <header id="hero" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container-xxl position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="hero-tag">
+            <i class="bi bi-stars"></i>
+            Cheatsheet interactivo · Open Source
+          </span>
+          <h1 class="hero-title">
+            Comandos de<br />
+            <span class="hero-accent">desarrollo web</span>
+            <span class="hero-cursor" aria-hidden="true">|</span>
+          </h1>
+          <p class="hero-lead">
+            Una guía rápida, oscura y enfocada para usar
+            <strong>Git</strong>, <strong>Angular CLI</strong>, <strong>NestJS</strong>,
+            <strong>Firebase</strong>, <strong>TypeScript</strong> y <strong>Vite</strong>
+            sin abrir 10 pestañas. Click para copiar, listo para pegar en tu terminal.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <a href="#categorias" class="btn btn-accent btn-lg">
+              <i class="bi bi-grid-fill me-1"></i> Explorar categorías
+            </a>
+            <a href="#todos" class="btn btn-outline-accent btn-lg">
+              <i class="bi bi-list-ol me-1"></i> Ver todos
+            </a>
+            <button class="btn btn-outline-accent btn-lg" id="scrollSearch" type="button">
+              <i class="bi bi-search me-1"></i> Buscar
+            </button>
+          </div>
+
+          <div class="hero-stats mt-4">
+            <div class="stat-pill"><i class="bi bi-terminal"></i> 100+ comandos</div>
+            <div class="stat-pill"><i class="bi bi-clipboard-check"></i> 1-click copy</div>
+            <div class="stat-pill"><i class="bi bi-moon-stars"></i> Tema Monokai</div>
+            <div class="stat-pill"><i class="bi bi-github"></i> GitHub Pages-ready</div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="terminal" role="img" aria-label="Demostración de uso">
+            <div class="term-bar">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+              <span class="term-title">~/dev-projects — zsh</span>
+            </div>
+            <div class="term-body">
+              <p><span class="term-prompt">$</span> <span class="term-cmd">ng new mi-app --routing --style scss</span></p>
+              <p class="term-out">✔ Installing packages...</p>
+              <p class="term-out">✔ Successfully initialized git.</p>
+              <p><span class="term-prompt">$</span> <span class="term-cmd">ng serve -o</span></p>
+              <p class="term-out">Local: <span class="term-link">http://localhost:4200</span></p>
+              <p><span class="term-prompt typo">$</span> <span class="term-cmd">_</span><span class="term-caret"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       CATEGORÍAS (cards)
+       ===================================================== -->
+  <section id="categorias" class="section section-categories">
+    <div class="container-xxl">
+      <header class="section-head">
+        <span class="section-tag"><i class="bi bi-grid"></i> 01 · Categorías</span>
+        <h2 class="section-title">Elige tu stack</h2>
+        <p class="section-lead">Las herramientas más usadas en el día a día, agrupadas para que encuentres lo que necesitas en dos segundos.</p>
+      </header>
+
+      <div id="catGrid" class="row g-4"></div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       TODOS LOS COMANDOS (tabla/grid completo)
+       ===================================================== -->
+  <section id="todos" class="section section-all">
+    <div class="container-xxl">
+      <header class="section-head">
+        <span class="section-tag"><i class="bi bi-list-ul"></i> 02 · Listado completo</span>
+        <h2 class="section-title">Todos los comandos</h2>
+        <p class="section-lead">Vista compacta. Filtra por categoría con las pestañas superiores.</p>
+      </header>
+
+      <div class="filter-tabs" role="tablist" id="filterTabs"></div>
+      <div id="allList" class="all-list mt-4"></div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       ATAJOS / SHORTCUTS
+       ===================================================== -->
+  <section id="atajos" class="section section-shortcuts">
+    <div class="container-xxl">
+      <header class="section-head">
+        <span class="section-tag"><i class="bi bi-keyboard"></i> 03 · Tips & atajos</span>
+        <h2 class="section-title">Trabaja más rápido</h2>
+      </header>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="shortcut-card h-100">
+            <div class="shortcut-icon"><i class="bi bi-keyboard-fill"></i></div>
+            <div class="shortcut-title">Ctrl/⌘ + K</div>
+            <p class="shortcut-desc">Abre el buscador global y filtra comandos al instante.</p>
+            <div class="kbd-row">
+              <kbd>Ctrl</kbd> + <kbd>K</kbd>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="shortcut-card h-100">
+            <div class="shortcut-icon"><i class="bi bi-clipboard-check"></i></div>
+            <div class="shortcut-title">Click en cualquier comando</div>
+            <p class="shortcut-desc">Lo copia al portapapeles. Pegalo directo en la terminal.</p>
+            <div class="kbd-row">
+              <kbd>Click</kbd>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="shortcut-card h-100">
+            <div class="shortcut-icon"><i class="bi bi-archive"></i></div>
+            <div class="shortcut-title">Flujo limpio Angular</div>
+            <p class="shortcut-desc">Crea un proyecto sin ruido desde el primer intento.</p>
+            <div class="kbd-row">
+              <kbd>ng new app --routing --style scss --skip-tests</kbd>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="shortcut-card h-100">
+            <div class="shortcut-icon"><i class="bi bi-shield-lock"></i></div>
+            <div class="shortcut-title">SSH en GitHub</div>
+            <p class="shortcut-desc">Genera tu clave una vez y olvídate del usuario/contraseña.</p>
+            <div class="kbd-row">
+              <kbd>ssh-keygen</kbd>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="footer">
+    <div class="container-xxl">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-7">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="bi bi-terminal-fill footer-mark"></i>
+            <strong>dev_cheatsheet</strong>
+          </div>
+          <p class="mb-0 footer-text">
+            Construido con <span class="text-accent">Bootstrap 5</span>,
+            <span class="text-accent">Bootstrap Icons</span> y un tema custom <span class="text-accent">Monokai</span>.
+            Hecho con <i class="bi bi-heart-fill text-danger"></i> por
+            <a href="#" class="footer-link">WEBMAIN</a>.
+          </p>
+        </div>
+        <div class="col-md-5 text-md-end">
+          <a href="#hero" class="btn btn-ghost btn-sm">
+            <i class="bi bi-arrow-up"></i> Volver arriba
+          </a>
+          <a href="https://github.com/" class="btn btn-outline-accent btn-sm ms-2"
+             target="_blank" rel="noopener">
+            <i class="bi bi-github"></i> Ver repo
+          </a>
+        </div>
+      </div>
+      <hr class="footer-sep" />
+      <div class="d-flex justify-content-between flex-wrap small text-muted">
+        <span>© <span id="yearNow"></span> · Hecho para devs.</span>
+        <span>v1.0.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante: volver arriba -->
+  <button id="toTop" class="btn btn-accent to-top" type="button" aria-label="Volver arriba" hidden>
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Toast de feedback (copiado, etc.) -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1080">
+    <div id="appToast" class="toast align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <i class="bi bi-check2-circle me-2"></i>
+          <span id="toastMsg">Comando copiado al portapapeles</span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

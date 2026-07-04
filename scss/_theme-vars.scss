@@ -1,0 +1,94 @@
+/* ============================================================
+   _theme-vars.scss
+   CSS Custom Properties para tema Monokai (default) y Ambar.
+   Incluye variantes RGB para usar con rgba().
+   ============================================================ */
+
+:root,
+[data-theme="monokai"] {
+  --bg:         #272822;
+  --bg-soft:    #1e1f1c;
+  --bg-elev:    #2f302a;
+  --bg-card:    #1e1f1c;
+  --line:       #3e3d32;
+  --line-2:     #49483e;
+
+  --fg:         #f8f8f2;
+  --fg-rgb:     248, 248, 242;
+  --fg-soft:    #cfcfc8;
+  --fg-mute:    #8b8b85;
+
+  --accent:     #f92672;
+  --accent-rgb: 249, 38, 114;
+  --orange:     #fd971f;
+  --orange-rgb: 253, 151, 31;
+  --yellow:     #e6db74;
+  --yellow-rgb: 230, 219, 116;
+  --green:      #a6e22e;
+  --green-rgb:  166, 226, 46;
+  --blue:       #66d9ef;
+  --blue-rgb:   102, 217, 239;
+  --purple:     #ae81ff;
+  --purple-rgb: 174, 129, 255;
+  --red:        #e73c68;
+  --red-rgb:    231, 60, 104;
+
+  --shadow-card:  0 8px 30px rgba(0,0,0,.35);
+  --shadow-hover: 0 18px 50px rgba(249,38,114,.18);
+  --shadow-accent:  0 4px 14px rgba(249,38,114,.25);
+  --shadow-accent-lg: 0 6px 20px rgba(249,38,114,.35);
+
+  --navbar-bg:    rgba(39,40,34,.88);
+  --hero-grad-1:  rgba(249,38,114,.08);
+  --hero-grad-2:  rgba(174,129,255,.06);
+  --hero-grad-3:  rgba(102,217,239,.04);
+  --btn-ghost-bg: rgba(var(--fg-rgb), .04);
+  --card-hover-inset: inset 0 0 0 1px rgba(255,255,255,.02);
+
+  --toast-bg: #2f302a;
+  --footer-sep: #3e3d32;
+}
+
+[data-theme="amber"] {
+  --bg:         #1c1814;
+  --bg-soft:    #241e18;
+  --bg-elev:    #2d271f;
+  --bg-card:    #241e18;
+  --line:       #3d3227;
+  --line-2:     #4d4033;
+
+  --fg:         #e8d5b5;
+  --fg-rgb:     232, 213, 181;
+  --fg-soft:    #c4ad8a;
+  --fg-mute:    #8a7558;
+
+  --accent:     #ff8800;
+  --accent-rgb: 255, 136, 0;
+  --orange:     #ff6d00;
+  --orange-rgb: 255, 109, 0;
+  --yellow:     #ffd54f;
+  --yellow-rgb: 255, 213, 79;
+  --green:      #85c44a;
+  --green-rgb:  133, 196, 74;
+  --blue:       #4dd0e1;
+  --blue-rgb:   77, 208, 225;
+  --purple:     #ce93d8;
+  --purple-rgb: 206, 147, 216;
+  --red:        #ef5350;
+  --red-rgb:    239, 83, 80;
+
+  --shadow-card:  0 8px 30px rgba(0,0,0,.5);
+  --shadow-hover: 0 18px 50px rgba(255,136,0,.12);
+  --shadow-accent:  0 4px 14px rgba(255,136,0,.18);
+  --shadow-accent-lg: 0 6px 20px rgba(255,136,0,.28);
+
+  --navbar-bg:    rgba(28,24,20,.92);
+  --hero-grad-1:  rgba(255,136,0,.06);
+  --hero-grad-2:  rgba(255,109,0,.04);
+  --hero-grad-3:  rgba(255,213,79,.03);
+  --btn-ghost-bg: rgba(232,213,181,.04);
+  --card-hover-inset: inset 0 0 0 1px rgba(232,213,181,.06);
+
+  --toast-bg: #2d271f;
+  --footer-sep: #3d3227;
+}

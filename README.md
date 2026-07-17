@@ -6,7 +6,7 @@ Landing page interactiva con comandos de desarrollo web. Tema **Monokai** / **Á
 
 ## 📚 Categorías
 
-11 categorías · ~240 comandos listos para copiar:
+11 categorías · ~260 comandos listos para copiar:
 
 | # | Categoría | Comandos |
 |---|-----------|----------|
@@ -20,7 +20,7 @@ Landing page interactiva con comandos de desarrollo web. Tema **Monokai** / **Á
 | 8 | Vite | 5 |
 | 9 | **Cloud Foundry** | 43 |
 | 10 | SAP Fiori & BAS | 30 |
-| 11 | Extras & Carpetas | 10 |
+| 11 | Extras & Carpetas | 21 |
 
 ## 🚀 Stack
 

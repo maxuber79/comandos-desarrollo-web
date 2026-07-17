@@ -361,7 +361,18 @@
         { "label": "Crear carpeta (PowerShell)", "cmd": "New-Item -ItemType Directory -Path docs" },
         { "label": "Varias carpetas (PowerShell)", "cmd": "New-Item -ItemType Directory -Path docs, src, tests" },
         { "label": "Carpetas anidadas (PowerShell)", "cmd": "New-Item -ItemType Directory -Path docs\\versiones -Force" },
-        { "label": "Crear archivo (PowerShell)", "cmd": "New-Item -ItemType File -Path README.md" }
+        { "label": "Crear archivo (PowerShell)", "cmd": "New-Item -ItemType File -Path README.md" },
+        { "label": "VS Code: abrir carpeta actual", "cmd": "code ." },
+        { "label": "VS Code: abrir archivo", "cmd": "code archivo.ts" },
+        { "label": "VS Code: abrir carpeta específica", "cmd": "code ./mi-proyecto" },
+        { "label": "VS Code: abrir archivo específico", "cmd": "code ./src/app/app.component.ts" },
+        { "label": "VS Code: nueva ventana (vacía)", "cmd": "code -n" },
+        { "label": "VS Code: abrir en nueva ventana", "cmd": "code -n ." },
+        { "label": "VS Code: abrir en ventana actual", "cmd": "code -r ." },
+        { "label": "VS Code: abrir archivo en ventana actual", "cmd": "code -r archivo.ts" },
+        { "label": "VS Code: comparar dos archivos", "cmd": "code --diff archivo-a.ts archivo-b.ts" },
+        { "label": "VS Code: abrir y saltar a línea", "cmd": "code -g archivo.ts:42" },
+        { "label": "VS Code: abrir varios a la vez", "cmd": "code index.html styles.css app.ts" }
       ]
     }
   ]

@@ -91,7 +91,8 @@
         { "label": "Agregar submódulo", "cmd": "git submodule add https://github.com/USER/REPO.git ruta" },
         { "label": "Inicializar submódulos", "cmd": "git submodule update --init --recursive" },
         { "label": "Limpiar archivo untracked", "cmd": "git clean -fd" },
-        { "label": "Buscar en el código (grep)", "cmd": "git grep \"texto\"" }
+        { "label": "Buscar en el código (grep)", "cmd": "git grep \"texto\"" },
+        { "label": "Flujo completo (stage+commit+push+merge a QAS)", "cmd": "git add . && git commit -m \"Mensaje del commit\" && git push origin dev && git checkout QAS && git merge dev && git push origin QAS && git checkout dev" }
       ]
     },
     {

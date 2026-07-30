@@ -10,7 +10,7 @@ Landing page interactiva con comandos de desarrollo web. Tema **Monokai** / **Á
 
 | # | Categoría | Comandos |
 |---|-----------|----------|
-| 1 | Git | 69 |
+| 1 | Git | 74 |
 | 2 | Node.js & NPM | 20 |
 | 3 | NVM | 8 |
 | 4 | TypeScript | 8 |

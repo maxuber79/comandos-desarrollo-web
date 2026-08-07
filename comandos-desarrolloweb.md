@@ -23,7 +23,93 @@ git -v
 ### Update git desde consola
 ```bash
  git update-git-for-windows
- ```
+  ```
+
+### Alias de Git configurados (globales)
+Listar todos los alias configurados:
+```bash
+git config --global --get-regexp alias
+```
+o usando un alias propio:
+```bash
+git la
+```
+
+#### Commits y stage
+```bash
+git cm "mensaje"          # commit -m
+git aa                    # add . (agregar todo al stage)
+git amend                # commit -a --amend (editar último commit)
+```
+
+#### Ramas
+```bash
+git ch [rama]             # checkout
+git br                    # branch -vv (ramas locales con detalle)
+git brd [rama]           # branch -d (borrar rama)
+git branch-all           # branch -a -vv (todas las ramas locales y remotas)
+git status-all           # branch -vv
+git cleanbr              # borrar ramas ya fusionadas (excluye main/master/dev)
+```
+
+#### Historial y logs
+```bash
+git lg                   # log con gráfico y formato coloreado
+git graph                # log --oneline --decorate --graph --all
+git recent               # últimos 10 commits con formato compacto
+```
+
+#### Stash
+```bash
+git save                 # stash push -m "Backup rápido"
+git pop                  # stash pop
+git dropall              # stash clear
+```
+
+#### Deshacer cambios
+```bash
+git undo                 # reset --soft HEAD~1 (deshace último commit, conserva cambios)
+git discard              # checkout -- . (descarta cambios sin commitear)
+```
+
+#### Push y remote
+```bash
+git pushup               # push -u origin HEAD (push y setea upstream)
+```
+
+#### Configuración de alias
+```bash
+git lam                  # config --global -e (abrir .gitconfig en el editor)
+git la                   # listar todos los alias configurados
+git update               # update-git-for-windows
+```
+
+### Instalar todos los alias desde cero
+Copiar y pegar estos comandos en la consola para configurar todos los alias de una sola vez:
+```bash
+git config --global alias.cm "commit -m"
+git config --global alias.aa "add ."
+git config --global alias.brd "branch -d"
+git config --global alias.ch "checkout"
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.amend "commit -a --amend"
+git config --global alias.la "!git config -l | grep alias | cut -c 7-"
+git config --global alias.lam "config --global -e"
+git config --global alias.update "update-git-for-windows"
+git config --global alias.br "branch -vv"
+git config --global alias.graph "log --oneline --decorate --graph --all"
+git config --global alias.undo "reset --soft HEAD~1"
+git config --global alias.discard "checkout -- ."
+git config --global alias.save "stash push -m Backup rápido"
+git config --global alias.pop "stash pop"
+git config --global alias.dropall "stash clear"
+git config --global alias.pushup "push -u origin HEAD"
+git config --global alias.cleanbr "!git branch --merged | grep -vE '(^\*|main|master|dev)' | xargs git branch -d"
+git config --global alias.recent "log -10 --pretty=format:'%C(yellow)%h%Creset %Cgreen%cd%Creset %C(bold blue)%an%Creset %s' --date=short"
+git config --global alias.status-all "branch -vv"
+git config --global alias.st "status"
+git config --global alias.branch-all "branch -a -vv"
+```
 
 ### Version de NodeJS
 Desde el siguiente link se podra descargar la ultma versión LTS [Node.js](https://nodejs.org/en/)
